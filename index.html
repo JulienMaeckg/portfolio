@@ -46,13 +46,23 @@
 		@keyframes preloader_spin { 0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 		@-webkit-keyframes preloader_spin { 0% {-webkit-transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);}}
     </style>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZD7M1KEPW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-7ZD7M1KEPW');
+	</script>
 </head>
 <body>
 	<div id="preloader"></div>
 	<script src="data/browsersupport.js?6BF1994E"></script>
 	<script src="data/player.js?6BF1994E"></script>
     <div id="content"></div>
-    <div id="spr0_32a891"></div>
+    <!-- <div id="spr0_32a891"></div> -->
     <script>
 		document.addEventListener("DOMContentLoaded", () => (function(startup){
 			function start(savedPresentationState)
@@ -75,4 +85,5 @@
 		})());
     </script>
 </body>
+
 </html>
