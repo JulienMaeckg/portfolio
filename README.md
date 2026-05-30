@@ -1,25 +1,29 @@
-# Mon Portfolio
+# 🚀 Portfolio — Julien MAECKELBERG
 
-Bienvenue sur mon dépôt GitHub ! Vous y trouverez une version **PDF de mon portfolio**, ainsi que les fichiers sources de ma page web.
+> **Futur ingénieur aérospatiale** · IPSA Toulouse · Systèmes embarqués & Télécommunications
 
----
-
-## 📄 Version PDF
-- [Télécharger le portfolio en PDF](Portfolio%20-%20MAECKELBERG%20Julien.pdf) *(version statique au format PDF)*.
-
----
-
-## 🌐 Version Web Interactive
-Pour découvrir la **version complète et intéractive de mon portfolio** (incluant les vidéos), rendez-vous sur :
-👉 **[Mon portfolio en ligne](https://julienmaeckg.github.io/portfolio/)**
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-3b82f6?style=flat-square&logo=github)](https://julienmaeckg.github.io/portfolio/)
+[![Langue](https://img.shields.io/badge/Langue-FR%20%2F%20EN-60a5fa?style=flat-square)](#)
+[![Projets](https://img.shields.io/badge/Projets-18-f59e0b?style=flat-square)](#-projets)
 
 ---
 
-## 📂 Structure du dépôt
-- `index.html` : Page d'accueil du portfolio web.
-- `Portfolio - MAECKELBERG Julien.pdf` : Version PDF du portfolio.
-- `data/` : Données & ressources utilisées par le portfolio.
-- `data.local-only/` : Données & ressources utilisées par le portfolio.
+## ✨ Aperçu
+
+Portfolio personnel présentant mes projets académiques et personnels, mon parcours et mes compétences. Développé en HTML/CSS/JS vanilla, sans framework, hébergé sur GitHub Pages.
+
+🔗 **[julienmaeckg.github.io/portfolio](https://julienmaeckg.github.io/portfolio/)**
 
 ---
-💡 *Pour toute question, n'hésitez pas à me contacter !*
+
+## 📬 Contact
+
+| | |
+|---|---|
+| 📧 Email | [julien.maeckelberg@ipsa.fr](mailto:julien.maeckelberg@ipsa.fr) |
+| 💼 LinkedIn | [linkedin.com/in/julien-maeckelberg](https://www.linkedin.com/in/julien-maeckelberg) |
+| 🌐 Portfolio | [julienmaeckg.github.io/portfolio](https://julienmaeckg.github.io/portfolio/) |
+
+---
+
+*Portfolio développé en HTML/CSS/JS vanilla — © 2026 Julien MAECKELBERG*
