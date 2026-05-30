@@ -92,7 +92,6 @@ function buildProjects(lang) {
       </div>
       <div class="project-body">
         <div class="project-header">
-          <span class="project-num">${p.num}</span>
           <span class="badge ${badgeClass}">${badgeLabel}</span>
         </div>
         <div class="project-title">${t.title}</div>

@@ -73,7 +73,7 @@ const TRANSLATIONS = {
     skill_tools_sub:  "Versioning · Documentation",
 
     /* ─── PROJETS ───────────────────────────────────────────── */
-    proj_label:     "18 projets",
+    proj_label:     "21 projets",
     proj_title:     "Réalisations & <span>projets</span>",
     filter_all:     "Tous",
     filter_school:  "Scolaire",
@@ -152,7 +152,7 @@ const TRANSLATIONS = {
     skill_ml_sub:     "Neural Networks · SVM · PCA",
     skill_tools_sub:  "Versioning · Documentation",
 
-    proj_label:     "18 projects",
+    proj_label:     "21 projects",
     proj_title:     "Work & <span>projects</span>",
     filter_all:     "All",
     filter_school:  "Academic",

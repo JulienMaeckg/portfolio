@@ -4,26 +4,25 @@
 
    POUR MODIFIER UN PROJET : changez les champs fr/en ci-dessous.
    POUR AJOUTER UN PROJET   : copiez un bloc { ... } et collez-le
-                              à la fin du tableau, en changeant
-                              l'id, le numéro, l'image, etc.
+                              dans le tableau à la bonne position.
 
    Champs disponibles :
-     id        — identifiant unique (string)
-     num       — numéro affiché ("01", "02" …)
-     image     — chemin vers l'image (dans images/)
-     categories — tableau de filtres possibles :
-                  "scolaire", "personnel", "python", "matlab", "hardware"
-     type      — "school" ou "perso" (badge couleur)
-     award     — (optionnel) objet { fr, en } pour la bannière trophée
-     fr / en   — traductions : title, desc, tags[]
+     id         — identifiant unique (string)
+     num        — numéro affiché ("01", "02" …)
+     image      — chemin vers l'image (dans images/)
+     categories — filtres : "scolaire", "personnel", "python", "matlab", "hardware"
+     type       — "school" (badge bleu) ou "perso" (badge vert)
+     award      — (optionnel) objet { fr, en } pour la bannière trophée
+     fr / en    — traductions : title, desc, tags[]
 
    ============================================================ */
 
 const PROJECTS = [
 
+  /* ── PYTHON / ML ──────────────────────────────────────────── */
+
   {
     id:         "nbody",
-    num:        "01",
     image:      "images/Image1.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -41,7 +40,6 @@ const PROJECTS = [
 
   {
     id:         "pendu",
-    num:        "02",
     image:      "images/Image2.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -59,7 +57,6 @@ const PROJECTS = [
 
   {
     id:         "procuste",
-    num:        "03",
     image:      "images/Image3.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -77,7 +74,6 @@ const PROJECTS = [
 
   {
     id:         "ica",
-    num:        "04",
     image:      "images/Image4.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -95,7 +91,6 @@ const PROJECTS = [
 
   {
     id:         "gradient",
-    num:        "05",
     image:      "images/Image5.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -113,7 +108,6 @@ const PROJECTS = [
 
   {
     id:         "segmentation",
-    num:        "06",
     image:      "images/Image6.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -131,7 +125,6 @@ const PROJECTS = [
 
   {
     id:         "schizo",
-    num:        "07",
     image:      "images/Image7.png",
     categories: ["scolaire", "python"],
     type:       "school",
@@ -148,8 +141,43 @@ const PROJECTS = [
   },
 
   {
+    id:         "stlviewer",
+    image:      "images/Image21.png",
+    categories: ["personnel", "python"],
+    type:       "perso",
+    fr: {
+      title: "Visionneur de fichiers STL",
+      desc:  "Application de bureau développée en Python permettant de visualiser des fichiers STL en 3D. Interface graphique intuitive avec choix des couleurs de faces et d'arêtes, réglage de la transparence et de la largeur des arêtes.",
+      tags:  ["Python", "Tkinter", "3D", "STL"],
+    },
+    en: {
+      title: "STL File Viewer",
+      desc:  "Python desktop application to visualize STL files in 3D. Intuitive GUI with customizable face and edge colors, transparency and edge width settings.",
+      tags:  ["Python", "Tkinter", "3D", "STL"],
+    },
+  },
+
+  {
+    id:         "vulcain",
+    image:      "images/Image20.png",
+    categories: ["scolaire", "python"],
+    type:       "school",
+    fr: {
+      title: "Détermination de stabilité de fusées par traitement d'images",
+      desc:  "Projet de fin d'études en collaboration avec le CNES et Planète Sciences. Développement de Vulcain, une application Android permettant de déterminer automatiquement la stabilité d'une fusée expérimentale à partir d'une photo, via un réseau de neurones convolutif (U-Net ResNet34) et une intégration avec le l'API du site SPOCK.",
+      tags:  ["Python", "PyTorch", "Kivy", "Réseau de neurones", "Android", "CNES"],
+    },
+    en: {
+      title: "Vulcain — Rocket stability determination through image processing",
+      desc:  "Graduation project in collaboration with CNES and Planète Sciences. Development of Vulcain, an Android application that automatically determines the stability of an experimental rocket from a photo, via a convolutional neural network (U-Net ResNet34) and integration with the SPOCK website API.",
+      tags:  ["Python", "PyTorch", "Kivy", "Neural network", "Android", "CNES"],
+    },
+  },
+
+  /* ── MATLAB / SIMULATION ──────────────────────────────────── */
+
+  {
     id:         "compression",
-    num:        "08",
     image:      "images/Image8.png",
     categories: ["scolaire", "matlab"],
     type:       "school",
@@ -167,7 +195,6 @@ const PROJECTS = [
 
   {
     id:         "drone",
-    num:        "09",
     image:      "images/Image9.png",
     categories: ["scolaire", "matlab"],
     type:       "school",
@@ -185,7 +212,6 @@ const PROJECTS = [
 
   {
     id:         "suspension",
-    num:        "10",
     image:      "images/Image10.png",
     categories: ["scolaire", "matlab"],
     type:       "school",
@@ -201,9 +227,10 @@ const PROJECTS = [
     },
   },
 
+  /* ── HARDWARE / CAO ───────────────────────────────────────── */
+
   {
     id:         "fsk",
-    num:        "11",
     image:      "images/Image11.png",
     categories: ["scolaire"],
     type:       "school",
@@ -220,8 +247,24 @@ const PROJECTS = [
   },
 
   {
+    id:         "planeur",
+    image:      "images/Image19.png",
+    categories: ["scolaire", "hardware"],
+    type:       "school",
+    fr: {
+      title: "Planeur d'un mètre d'envergure avec pilote automatique",
+      desc:  "Conception, modélisation et fabrication d'un planeur optimisé pour un taux de chute minimal. Profil SD7037, structure en carbone, pièces imprimées en ABS. Pilote automatique en tangage embarqué (Arduino Nano + MPU6050). Validé en essais à la volière de l'ENAC.",
+      tags:  ["Fusion 360", "Impression 3D", "Arduino", "XFLR5", "Aérodynamique"],
+    },
+    en: {
+      title: "One-meter wingspan glider with pitch autopilot",
+      desc:  "Design, modeling and fabrication of a glider optimized for minimum sink rate. SD7037 airfoil, carbon structure, ABS 3D-printed parts. Embedded pitch autopilot (Arduino Nano + MPU6050). Flight-validated at ENAC flight lab.",
+      tags:  ["Fusion 360", "3D Printing", "Arduino", "XFLR5", "Aerodynamics"],
+    },
+  },
+
+  {
     id:         "fusee",
-    num:        "12",
     image:      "images/Image12.png",
     categories: ["personnel", "hardware"],
     type:       "perso",
@@ -239,7 +282,6 @@ const PROJECTS = [
 
   {
     id:         "robocup",
-    num:        "13",
     image:      "images/Image13.png",
     categories: ["scolaire", "hardware"],
     type:       "school",
@@ -249,7 +291,7 @@ const PROJECTS = [
     },
     fr: {
       title: "Robot pour la RoboCup Junior Rescue League 2018",
-      desc:  "Robot autonome LEGO Mindstorms pour parcours avec obstacles. 1ère place nationale, qualification et 10ᵉ place à la compétition européenne.",
+      desc:  "Robot autonome LEGO Mindstorms pour parcours avec obstacles. 1re place nationale, qualification et 10ᵉ place à la compétition européenne.",
       tags:  ["LEGO Mindstorms", "EV3-G", "Robotique"],
     },
     en: {
@@ -261,7 +303,6 @@ const PROJECTS = [
 
   {
     id:         "hypothermie",
-    num:        "14",
     image:      "images/Image14.png",
     categories: ["scolaire", "hardware"],
     type:       "school",
@@ -279,7 +320,6 @@ const PROJECTS = [
 
   {
     id:         "veilleuses",
-    num:        "15",
     image:      "images/Image15.png",
     categories: ["personnel", "hardware"],
     type:       "perso",
@@ -297,7 +337,6 @@ const PROJECTS = [
 
   {
     id:         "robot-combat",
-    num:        "16",
     image:      "images/Image16.png",
     categories: ["scolaire", "hardware"],
     type:       "school",
@@ -315,7 +354,6 @@ const PROJECTS = [
 
   {
     id:         "soliddrain",
-    num:        "17",
     image:      "images/Image17.png",
     categories: ["scolaire", "hardware"],
     type:       "school",
@@ -333,7 +371,6 @@ const PROJECTS = [
 
   {
     id:         "roblox",
-    num:        "18",
     image:      "images/Image18.png",
     categories: ["scolaire"],
     type:       "school",
