@@ -358,12 +358,12 @@ const PROJECTS = [
     categories: ["scolaire", "hardware"],
     type:       "school",
     fr: {
-      title: "Développement du Solid Drain — pavé anti-inondation",
+      title: "Développement d'un pavé anti-inondation",
       desc:  "Pavé enterré fonctionnant comme cuve de rétention d'eau temporaire pour réduire l'imperméabilisation des sols urbains et les risques d'inondation.",
       tags:  ["CATIA", "Génie civil", "Environnement"],
     },
     en: {
-      title: "Solid Drain — flood-prevention paving block",
+      title: "Development of a flood-prevention paving block",
       desc:  "Underground paving block acting as a temporary water retention tank to reduce urban soil waterproofing and flooding risks.",
       tags:  ["CATIA", "Civil engineering", "Environment"],
     },
