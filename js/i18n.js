@@ -26,19 +26,19 @@ const TRANSLATIONS = {
     exp_label: "Expérience professionnelle",
     exp_title: "Parcours <span>professionnel</span>",
 
-    ariane_date: "Févr. – Juill. 2026",
+    ariane_date: "FÉVR. – JUILL. 2026",
     ariane_role: "Ingénieur Analyste · Stage de fin d'études",
     ariane_b1:   "Implémentation d'un package Python d'outils de prédimensionnement et d'analyse pour moteurs fusées",
     ariane_b2:   "Développement d'un code de traitement de signal de données d'essais et de simulations",
     ariane_b3:   "Validation des outils sur des exemples théoriques et réels",
 
-    gp_date: "Juin – Sept. 2025",
+    gp_date: "JUIN – SEPT. 2025",
     gp_role: "Assistant Bureau d'Études · Stage technicien",
     gp_b1:   "Rapports de métrologie et vérification de conformité aux tolérances",
     gp_b2:   "Mise à jour des données produits dans l'ERP lors d'une migration système",
     gp_b3:   "Calcul et suivi des KPI liés au taux de disponibilité du parc machines",
 
-    norauto_date: "Juill. 2023",
+    norauto_date: "JUILL. 2023",
     norauto_role: "Technicien en Mécanique Automobile · Stage ouvrier",
     norauto_b1:   "Maintenance : inspection, vidange, freinage, pneumatiques",
     norauto_b2:   "Participation aux diagnostics et à la maintenance préventive et corrective",
@@ -60,7 +60,7 @@ const TRANSLATIONS = {
 
     korea_country: "CORÉE DU SUD",
     korea_degree: "Semestre International",
-    korea_date:   "Sept. – Déc. 2024",
+    korea_date:   "SEPT. – DÉC. 2024",
     korea_b1:     "Introduction à l'impression 3D et ses applications",
     korea_b2:     "Initiation à la programmation orientée objet en Java",
     korea_b3:     "Création d'un monde virtuel en réalité virtuelle",
@@ -108,19 +108,19 @@ const TRANSLATIONS = {
     exp_label: "Professional Experience",
     exp_title: "Professional <span>background</span>",
 
-    ariane_date: "Feb. – Jul. 2026",
+    ariane_date: "FEB. – JUL. 2026",
     ariane_role: "Data Analyst Engineer · Graduation Internship",
     ariane_b1:   "Implemented a Python package providing sizing and analysis tools for rocket engines",
     ariane_b2:   "Developed signal processing code for testing and simulation data",
     ariane_b3:   "Validated tools by applying them to theoretical and real-world case studies",
 
-    gp_date: "Jun. – Sep. 2025",
+    gp_date: "JUN. – SEP. 2025",
     gp_role: "R&D Engineering Assistant · Technician Internship",
     gp_b1:   "Produced metrology reports and verified compliance with tolerances",
     gp_b2:   "Updated and created product data in ERP as part of a system migration",
     gp_b3:   "Calculated and monitored KPIs related to machine fleet availability",
 
-    norauto_date: "Jul. 2023",
+    norauto_date: "JUL. 2023",
     norauto_role: "Automotive Mechanic Technician · Introductory Internship",
     norauto_b1:   "Maintenance operations: inspections, oil changes, braking systems, tires",
     norauto_b2:   "Participated in diagnostics and preventive/corrective maintenance",
@@ -141,7 +141,7 @@ const TRANSLATIONS = {
 
     korea_country: "SOUTH KOREA",
     korea_degree: "International Semester Exchange",
-    korea_date:   "Sep. – Dec. 2024",
+    korea_date:   "SEP. – DEC. 2024",
     korea_b1:     "Introduction to 3D printing and its applications across various fields",
     korea_b2:     "Introductory coursework in Object-Oriented Programming using Java",
     korea_b3:     "Developed a virtual reality world",
