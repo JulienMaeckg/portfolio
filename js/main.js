@@ -100,6 +100,11 @@ function buildProjects(lang) {
         ${awardHtml}
       </div>`;
 
+    // Lightbox on image click
+    card.querySelector('.project-img-wrap').addEventListener('click', () => {
+      openLightbox(p.image, t.title);
+    });
+
     grid.appendChild(card);
     revealObserver.observe(card);
   });
@@ -151,3 +156,43 @@ function setLang(lang) {
 
 // Initial render
 buildProjects('fr');
+
+
+/* ── LIGHTBOX ────────────────────────────────────────────────── */
+(function () {
+  // Create lightbox DOM
+  const overlay = document.createElement('div');
+  overlay.id = 'lightbox';
+  overlay.innerHTML = `
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Fermer">✕</button>
+      <img class="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const img     = overlay.querySelector('.lightbox-img');
+  const caption = overlay.querySelector('.lightbox-caption');
+
+  function close() {
+    overlay.classList.remove('lightbox-open');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) close();
+  });
+  overlay.querySelector('.lightbox-close').addEventListener('click', close);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('lightbox-open')) close();
+  });
+
+  window.openLightbox = function (src, title) {
+    img.src     = src;
+    img.alt     = title;
+    caption.textContent = title;
+    overlay.classList.add('lightbox-open');
+    document.body.style.overflow = 'hidden';
+  };
+})();
