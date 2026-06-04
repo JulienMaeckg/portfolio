@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +13,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 
-
   <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZD7M1KEPW"></script>
   <script>
@@ -24,10 +22,8 @@
   
     gtag('config', 'G-7ZD7M1KEPW');
   </script>
-
   <!-- Umami tag -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="18b505b9-0df5-4f21-be47-fcf267841d08"></script>
-  
 </head>
 <body>
 
@@ -38,15 +34,18 @@
 <nav>
   <span class="nav-logo">Portfolio</span>
   <ul class="nav-links">
-    <li><a href="#experience" data-i18n="nav_exp">Expérience</a></li>
-    <li><a href="#competences" data-i18n="nav_skills">Compétences</a></li>
-    <li><a href="#projets"    data-i18n="nav_proj">Projets</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#experience" data-i18n="nav_exp" data-umami-event="nav-experience">Expérience</a></li>
+    <li><a href="#competences" data-i18n="nav_skills" data-umami-event="nav-competences">Compétences</a></li>
+    <li><a href="#projets"    data-i18n="nav_proj" data-umami-event="nav-projets">Projets</a></li>
+    <li><a href="#contact" data-umami-event="nav-contact">Contact</a></li>
   </ul>
   <div class="lang-toggle">
     <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">FR</button>
     <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
   </div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- ── HERO ─────────────────────────────────────────────────── -->
@@ -69,8 +68,8 @@
   </div>
 
   <div class="hero-ctas">
-    <a class="btn btn-primary" href="#projets"  data-i18n="cta_proj">Voir les projets</a>
-    <a class="btn btn-outline"  href="#contact" data-i18n="cta_contact">Me contacter</a>
+    <a class="btn btn-primary" href="#projets"  data-i18n="cta_proj" data-umami-event="cta-voir-projets">Voir les projets</a>
+    <a class="btn btn-outline"  href="#contact" data-i18n="cta_contact" data-umami-event="cta-me-contacter">Me contacter</a>
   </div>
 
   <!-- Décoration orbite -->
@@ -326,6 +325,23 @@
 <script src="js/i18n.js"></script>
 <script src="js/projects.js"></script>
 <script src="js/main.js"></script>
+
+<!-- ── HAMBURGER MENU ─────────────────────────────────────────── -->
+<script>
+  const hamburger = document.getElementById('navHamburger');
+  const navLinks  = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  // Fermer le menu au clic sur un lien
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 
 </body>
 </html>
