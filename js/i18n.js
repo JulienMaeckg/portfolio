@@ -14,7 +14,7 @@ const TRANSLATIONS = {
 
     /* ─── HERO ──────────────────────────────────────────────── */
     hero_eyebrow: "Ingénierie aérospatiale · IPSA Toulouse",
-    hero_desc:    "Futur ingénieur aérospatiale de l'IPSA Toulouse, spécialisé en systèmes embarqués et télécommunications. Passionné par la conception et la modélisation de systèmes complexes, je suis à la recherche d'un premier poste d'ingénieur dans le secteur aérospatial.",
+    hero_desc:    "Ingénieur aérospatiale de l'IPSA Toulouse, spécialisé en systèmes embarqués et télécommunications. Passionné par la conception et la modélisation de systèmes complexes, je suis à la recherche d'un premier poste d'ingénieur dans le secteur aérospatial.",
     pill_grad:    "Promotion 2026 — IPSA",
     pill_ariane:  "Stage ArianeGroup — Moteurs fusées",
     pill_toeic:   "TOEIC 855 (B2)",
@@ -86,7 +86,7 @@ const TRANSLATIONS = {
     /* ─── CONTACT ───────────────────────────────────────────── */
     contact_label: "Disponible pour",
     contact_title: "Opportunités <span>d'emploi</span>",
-    contact_sub:   "Futur diplômé en ingénierie aérospatiale, je suis à la recherche d'un premier poste d'ingénieur. N'hésitez pas à me contacter !",
+    contact_sub:   "Ingénieur aérospatial, je suis à la recherche d'un premier poste d'ingénieur. N'hésitez pas à me contacter !",
   },
 
   /* ══════════════════════════════════════════════════════════ */
@@ -97,7 +97,7 @@ const TRANSLATIONS = {
     nav_skills: "Skills",
 
     hero_eyebrow: "Aerospace Engineering · IPSA Toulouse",
-    hero_desc:    "Future Aerospace Engineer from IPSA Toulouse, specializing in Embedded Systems and Telecommunications. Passionate about complex system design and modeling, I am actively looking for my first engineering position in the aerospace sector.",
+    hero_desc:    "Aerospace Engineer from IPSA Toulouse, specializing in Embedded Systems and Telecommunications. Passionate about complex system design and modeling, I am actively looking for my first engineering position in the aerospace sector.",
     pill_grad:    "Class of 2026 — IPSA",
     pill_ariane:  "ArianeGroup Internship — Rocket Engines",
     pill_toeic:   "TOEIC 855 (B2)",
@@ -164,6 +164,6 @@ const TRANSLATIONS = {
 
     contact_label: "Open to",
     contact_title: "Job <span>opportunities</span>",
-    contact_sub:   "Future aerospace engineering graduate actively looking for my first engineering position. Feel free to reach out!",
+    contact_sub:   "Aerospace engineer actively looking for my first engineering position. Feel free to reach out!",
   }
 };
